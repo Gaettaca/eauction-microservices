@@ -1,0 +1,39 @@
+{% extends "shared/base.html" %}
+
+
+{% block title %}
+  <title>Auction Detail</title>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="display-5">Auction Detail</h1>
+    </div>
+  </div>
+
+  <div class="row">
+      <table class="table table-striped table-hover">
+        <tbody>
+          <tr>
+            <th scope="row">Auction Title</th>
+            <td colspan="2">{{auction.title}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Description</th>
+            <td colspan="2">{{auction.description}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Location</th>
+            <td colspan="2">{{auction.place}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Date</th>
+            <td colspan="2">{{auction.date}}</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+<div class="card shadow p-3 mb-2 bg-body rounded" style="width: 22rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{obj.title}}</h5>
+    <p class="card-text">Description: {{obj.description}}</p>
+<!--    <p class="card-text">: <a href="{{obj.place}}">{{obj.place}}</a></p>-->
+    <p class="card-text">Place: {{obj.place}}</p>
+    <p class="card-text">Date: {{obj.date}}</p>
+    <a href="api/v1/auctions/detail/{{obj.id}}" class="btn btn-primary">Engage</a>
+  </div>
+</div>
